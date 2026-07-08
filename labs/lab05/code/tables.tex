@@ -1,0 +1,29 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+
+\begin{document}
+
+% Увеличение интервала на 50%
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{cc}
+\hline
+Square & $x^2$ \\
+Cube & $x^3$ \\
+\hline
+\end{tabular}
+\end{center}
+
+% Увеличение высоты строк на 2pt
+\begin{center}
+\setlength{\extrarowheight}{2pt}
+\begin{tabular}{cc}
+\hline
+Square & $x^2$ \\
+Cube & $x^3$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\end{document}
