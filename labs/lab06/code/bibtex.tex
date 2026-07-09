@@ -1,0 +1,19 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[style=authoryear, backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+% Используем латинские ключи
+\begin{document}
+
+\section*{Introduction}
+
+The paper cites works by Russian scientists: 
+\textcite{Ivanov2020}, \textcite{Petrov2021}, \textcite{Sidorov2019}.
+
+\printbibliography
+
+\end{document}
+
