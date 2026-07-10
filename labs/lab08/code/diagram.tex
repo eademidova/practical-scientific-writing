@@ -1,0 +1,22 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=2]
+% Узлы
+\node[circle,draw] at (0,0) (a) {A};
+\node[rectangle,fill] at (3,0) (b) {B};
+\node at (3,0.4) (blabel) {B};
+\node[rectangle,rounded corners,draw] at (5,2) (c) {C};
+% Линии
+\draw[->,green] (a) -- (b) node[midway,below,black] {2};
+\draw[->,blue] (a) to[out=45,in=135] (b);
+\draw[->,red] (b) -- (c);
+\draw[yellow,dotted,very thick] (b) |- (c);
+\draw[<-,cyan] (b) -| (c);
+\draw[thick,black] (a) .. controls (1,5) .. (c) node[midway,above] {$\frac{1}{2}$};
+\end{tikzpicture}
+
+\end{document}
